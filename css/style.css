@@ -1,0 +1,231 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    font-family: "Source Sans Pro", sans-serif;
+}
+
+main{
+    color: #0000008c;
+    margin-bottom: 60px;
+}
+
+.container{
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.container-conteudo{
+    max-width: 600px;
+    margin: 0;
+    text-align: center;
+}
+.container-conteudo h2, .container-conteudoh3{
+    margin: 0;
+}
+
+
+#sobre, #especialidades, #contato{
+    padding: 40px 20px 0;
+}
+/*cabecalho*/
+.topo{
+    background-color: #1ec3ea;
+    width: 100%;
+}
+
+.topo .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    min-height: 60px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+.topo .titulo{
+    font-weight: bold;
+    font-size: 28px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.topo .titulo a{
+    display: flex;
+}
+
+.topo .logo{
+    height: 60px;
+}
+
+.links{
+    display: flex;
+    margin-left: 15px;
+    padding: 10px;
+}
+
+.links a{
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.links a:hover{
+    color: #1d2440;
+}
+/**/
+
+/*box*/
+.box-visao{
+    height: 500px;
+    width: 100%;
+    position: relative;
+    background-image: url(recepcao2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.box-visao-titulo{
+    color: #ffffff;
+    font-size: 28px;
+    display: flex;
+    padding-top: 130px;
+    margin-left: 15px;
+    text-transform: uppercase;
+    
+}
+
+/*box*/
+
+/*sobre*/
+
+.sobre-conteudo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.sobre{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sobre h3{
+    text-transform: uppercase;
+    font-weight: 500;
+}
+/*sobre*/
+/*especialidades*/
+
+.box-especialidades{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sobre-especialidades{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.especialidade{
+    border-radius: 5px;
+    box-shadow: 0px 1px 10px;
+    width: calc(100% / 3 - 40px);
+    margin: 20px;
+}
+.especialidade img{
+    width: 100%;
+}
+
+.especialidade figcaption{
+    text-transform: uppercase;
+    padding: 10px;
+    text-align: center;
+}
+
+.link-horarios{
+    text-align: center;
+}
+
+.link-horarios a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #1ec3ea;
+    padding: 10px;
+    margin-top: 15px;
+}
+
+.contato{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container-rota{
+    width: 100%;
+}
+
+
+footer{
+    background-color: #02483e;
+    display: flex;
+    text-align: center;
+    color: #fff;
+}
+
+@media (max-width: 425px){
+    .topo .container{
+        flex-direction: column;
+    }   
+    .titulo{
+        margin: 10px 0;
+    }
+    .links{
+        width: 100%;
+        border-top: 1px solid #009fa5;
+        justify-content: space-around;
+    }
+    .box-visao-titulo{
+        font-size: 28px;
+        padding-top: 80px;
+    }
+    .box-visao{
+        height: 300px;
+    }
+    .especialidade{
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px){
+    .box-visao{
+        height: 300px;
+    }
+    .sobre img{
+        display: none;
+    }
+    .box-especialidades{
+        justify-content: center;
+    }
+    .especialidade{
+        width: calc(100% / 2 - 40px);
+    }
+}
+
+@media (max-width: 1024px)
+{
+    .box-visao{
+        height: 400px;
+    }
+}
